@@ -1,0 +1,19 @@
+name: Run Bash Script
+
+on:
+  push:
+    branches:
+      - main  # Change this to your default branch if different
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest  # Use the latest Ubuntu runner
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Run Bash script
+      run: |
+        chmod +x myscript.sh  # Make the script executable
+        ./myscript.sh          # Run the script
