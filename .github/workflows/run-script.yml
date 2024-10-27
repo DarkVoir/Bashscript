@@ -16,4 +16,4 @@ jobs:
     - name: Run Bash script
       run: |
         chmod +x ubuscript.bash  # Make the script executable
-        ./myscript.sh          # Run the script
+        ./ubuscript.bash          # Run the script
